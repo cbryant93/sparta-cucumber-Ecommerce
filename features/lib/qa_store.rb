@@ -9,4 +9,9 @@ module QAstore
   def qa_registration_page
     RegistrationPage.new
   end
+
+  def qa_login_page
+    LoginPage.new
+  end
+
 end

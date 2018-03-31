@@ -41,4 +41,8 @@ class RegistrationPage
   find(:css, 'p.message').text
   end
 
+  def username_taken_message
+  find(:css, 'div#login_error').text
+  end
+
 end
