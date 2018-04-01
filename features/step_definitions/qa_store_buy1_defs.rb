@@ -1,10 +1,10 @@
 Given("User can access the product page") do
   qa_home_page.visit_home_page
   qa_home_page.click_product_link
-  qa_product_page.click_iphone5_link
 end
 
 Given("User adds iphone5 to cart") do
+  qa_product_page.click_iphone5_link
   qa_product_page.add_to_cart_button
 end
 
@@ -17,7 +17,7 @@ Given("User fills out correct details in form") do
   qa_checkout_page.select_shipping_country('United Kingdom')
   qa_checkout_page.input_county('Essex')
   qa_checkout_page.click_calculate_button
-  qa_checkout_page.input_email('abc@fake.com')
+  qa_checkout_page.input_email('abcde@fake.com')
   qa_checkout_page.input_billing_firstname('Christian')
   qa_checkout_page.input_billing_lastname('Bryant')
   qa_checkout_page.input_billing_address('45 fake lane')

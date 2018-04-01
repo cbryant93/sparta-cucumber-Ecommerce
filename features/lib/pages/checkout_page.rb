@@ -82,7 +82,7 @@ select(country, from: 'wpsc_checkout_form_16')
 end
 
 def input_shipping_postcode(postcode)
-fill_in('wpsc_checkout_form_17', :with => postcode)
+  fill_in('wpsc_checkout_form_17', :with => postcode)
 end
 
 def click_purchase_button
@@ -90,8 +90,19 @@ def click_purchase_button
 end
 
 def purchase_complete_message
-find(:css, '#post-30 > div > div.wpsc-transaction-results-wrap > p:nth-child(2)').text
+  find(:css, '#post-30 > div > div.wpsc-transaction-results-wrap > p:nth-child(2)').text
 end
 
+def remove_item
+  find(:css, '#checkout_page_container > div.slide1 > table > tbody > tr.product_row.product_row_0.alt > td.wpsc_product_remove.wpsc_product_remove_0 > form > input[type="submit"]:nth-child(4)').click
+end
+
+def increase_quantity(number)
+fill_in('quantity', :with => number)
+end
+
+def update_quantity
+  find(:css, '#checkout_page_container > div.slide1 > table > tbody > tr.product_row.product_row_0.alt > td.wpsc_product_quantity.wpsc_product_quantity_0 > form > input[type="submit"]:nth-child(4)').click
+end
 
 end
