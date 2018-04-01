@@ -14,4 +14,12 @@ module QAstore
     LoginPage.new
   end
 
+  def qa_product_page
+    ProductPage.new
+  end
+
+  def qa_checkout_page
+    CheckoutPage.new
+  end
+
 end
