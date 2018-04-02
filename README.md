@@ -109,10 +109,11 @@ Another problem I found was when running the tests there would be a few anomalie
 
 ## Report
 Once all my features were written in automation tests I wrote
-```cucumber -f html -o test_html_report.html
+```terminal
+cucumber -f html -o test_html_report.html
 ```
 into the terminal, which ran the tests I wrote as well as creating a html page of all the tests which had been ran.
 
 Below you can see the final results for my tests:
 
-![report](../sparta-cucumber-Ecommerce/Screen Shot 2018-04-01 at 19.35.52.png)
+![img](Screen Shot 2018-04-01 at 19.35.52.png)
