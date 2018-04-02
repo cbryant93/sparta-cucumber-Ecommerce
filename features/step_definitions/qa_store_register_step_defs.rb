@@ -5,11 +5,11 @@ Given(/^User can access the QA register homepage$/) do
 end
 
 And(/^User inputs a username$/) do
-  qa_registration_page.input_username('fake4t4ffdsjhrers')
+  qa_registration_page.input_username('fake4342387hhshjshdjjhrers')
 end
 
 And(/^User inputs an email$/) do
-  qa_registration_page.input_email('faktestfdsfseeee@hotmail.com')
+  qa_registration_page.input_email('faktestfake12787239rfdf@hotmail.com')
 end
 
 When(/^User clicks register button$/) do
@@ -22,7 +22,7 @@ end
 
 Given(/^User inputs a (.*) which is already taken$/) do |username|
   qa_registration_page.input_username(username)
-  qa_registration_page.input_email('testte454trerdds@hotmail.com')
+  qa_registration_page.input_email('testfake18374637fake@hotmail.com')
   qa_registration_page.click_submit_button
 end
 
