@@ -116,4 +116,4 @@ into the terminal, which ran the tests I wrote as well as creating a html page o
 
 Below you can see the final results for my tests:
 
-![img](Screen Shot 2018-04-01 at 19.35.52.png)
+![report](report.png)
